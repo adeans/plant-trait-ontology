@@ -63,5 +63,14 @@ Datatype: idrange:3
         xsd:integer[> 1000000 , <= 1200000]
     
     
+Datatype: idrange:4
+
+    Annotations: 
+        allocatedto: "adeans"
+    
+    EquivalentTo: 
+        xsd:integer[> 0003501 , <= 0004500]
+    
+    
 
     

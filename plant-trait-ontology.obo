@@ -23,6 +23,11 @@ property_value: http://purl.org/dc/terms/license http://creativecommons.org/lice
 property_value: http://purl.org/dc/terms/title "Plant Trait Ontology" xsd:string
 
 [Term]
+id: GALLONT:0000025
+name: plant gall
+is_a: PO:0025496 ! multi-tissue plant structure
+
+[Term]
 id: TO:0000001
 name: carbon sensitivity
 def: "Sensitivity to the carbon content in the growth medium. It plays an important role in the synthesis of various inorganic and organic metabolites such as carbohydrates, lipids, amino acids and peptides and plays a role in various metabolic processes." [Gramene:pankaj_jaiswal]
@@ -2904,6 +2909,24 @@ synonym: "CMS-HL (related)" RELATED []
 synonym: "HLCMS (related)" RELATED []
 is_a: TO:0000232 ! rice cytoplasmic male sterility
 is_a: TO:0000415 ! aborted bi-nucleate stage
+
+[Term]
+id: TO:00003502
+name: plant gall diameter
+is_a: TO:0003500 ! plant gall morphology trait
+intersection_of: PATO:0001334 ! diameter
+intersection_of: inheres_in GALLONT:0000025 ! plant gall
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-04-17T19:19:35Z" xsd:dateTime
+
+[Term]
+id: TO:00003503
+name: plant gall color pattern
+is_a: TO:0003500 ! plant gall morphology trait
+intersection_of: PATO:0000019 ! color pattern
+intersection_of: inheres_in GALLONT:0000025 ! plant gall
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-04-17T19:22:28Z" xsd:dateTime
 
 [Term]
 id: TO:0000351
@@ -11840,6 +11863,8 @@ def: "A multi-tissue plant structure morphology trait (TO:0000836) which is a qu
 comment: Plant galls are formed in response to some biotic stress (PSO:0000004), such as damage caused by an insect, mite, microorganism or other plant.
 xref: TO_GIT:505
 is_a: TO:0000836 ! multi-tissue plant structure morphology trait
+intersection_of: PATO:0001241 ! physical object quality
+intersection_of: inheres_in GALLONT:0000025 ! plant gall
 created_by: https://orcid.org/0000-0002-6379-8932
 creation_date: 2024-03-11T21:05:28Z
 
