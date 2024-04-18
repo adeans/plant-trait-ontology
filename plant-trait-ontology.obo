@@ -2929,6 +2929,15 @@ property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-211
 property_value: http://purl.org/dc/terms/date "2024-04-17T19:22:28Z" xsd:dateTime
 
 [Term]
+id: TO:00003504
+name: plant gall shape
+is_a: TO:0003500 ! plant gall morphology trait
+intersection_of: PATO:0000052 ! shape
+intersection_of: inheres_in GALLONT:0000025 ! plant gall
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-04-18T13:45:32Z" xsd:dateTime
+
+[Term]
 id: TO:0000351
 name: zinc sensitivity
 def: "Sensitivity to the zinc content in the growth medium. It acts as cofactor for certain enzymes like Class II aldolases, metalloproteases, alkaline phosphatase, etc." [Gramene:pankaj_jaiswal, RiceSES:SES]
