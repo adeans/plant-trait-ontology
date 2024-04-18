@@ -25,6 +25,7 @@ property_value: http://purl.org/dc/terms/title "Plant Trait Ontology" xsd:string
 [Term]
 id: GALLONT:0000025
 name: plant gall
+def: "A multi-tissue plant structure (PO:0025496) that develops in response to a biotic stress (PSO:0000004)." []
 is_a: PO:0025496 ! multi-tissue plant structure
 
 [Term]
@@ -2913,6 +2914,7 @@ is_a: TO:0000415 ! aborted bi-nucleate stage
 [Term]
 id: TO:00003502
 name: plant gall diameter
+def: "A plant gall morphology trait (TO:0003500) that is the diameter of the plant gall (GALLONT:0000025)." []
 is_a: TO:0003500 ! plant gall morphology trait
 intersection_of: PATO:0001334 ! diameter
 intersection_of: inheres_in GALLONT:0000025 ! plant gall
@@ -2922,6 +2924,7 @@ property_value: http://purl.org/dc/terms/date "2024-04-17T19:19:35Z" xsd:dateTim
 [Term]
 id: TO:00003503
 name: plant gall color pattern
+def: "A plant gall morphology trait (TO:0003500) that is the color pattern of the plant gall (GALLONT:0000025)." []
 is_a: TO:0003500 ! plant gall morphology trait
 intersection_of: PATO:0000019 ! color pattern
 intersection_of: inheres_in GALLONT:0000025 ! plant gall
@@ -2931,6 +2934,7 @@ property_value: http://purl.org/dc/terms/date "2024-04-17T19:22:28Z" xsd:dateTim
 [Term]
 id: TO:00003504
 name: plant gall shape
+def: "A plant gall morphology trait (TO:0003500) that is the shape of the plant gall (GALLONT:0000025)." []
 is_a: TO:0003500 ! plant gall morphology trait
 intersection_of: PATO:0000052 ! shape
 intersection_of: inheres_in GALLONT:0000025 ! plant gall
@@ -11868,7 +11872,7 @@ created_by: http://orcid.org/0000-0002-8461-9745
 [Term]
 id: TO:0003500
 name: plant gall morphology trait
-def: "A multi-tissue plant structure morphology trait (TO:0000836) which is a quality of a plant gall (PO:0025626)." [TO:cooperl]
+def: "A multi-tissue plant structure morphology trait (TO:0000836) which is a quality of a plant gall (GALLONT:0000025)." [TO:cooperl]
 comment: Plant galls are formed in response to some biotic stress (PSO:0000004), such as damage caused by an insect, mite, microorganism or other plant.
 xref: TO_GIT:505
 is_a: TO:0000836 ! multi-tissue plant structure morphology trait
